@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hockey_chart.Controller">
+   <center>
+      <BarChart fx:id="chart" alternativeRowFillVisible="false" horizontalGridLinesVisible="false" horizontalZeroLineVisible="false" layoutX="100.0" legendVisible="false" nodeOrientation="LEFT_TO_RIGHT" verticalGridLinesVisible="false" verticalZeroLineVisible="false" BorderPane.alignment="CENTER_LEFT">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label=" Points Scored (2018-2019)" nodeOrientation="LEFT_TO_RIGHT" side="LEFT" upperBound="300.0">
+               <tickLabelFont>
+                  <Font name="Arial" size="10.0" />
+               </tickLabelFont>
+            </NumberAxis>
+        </yAxis>
+         <rotationAxis>
+            <Point3D />
+         </rotationAxis>
+      </BarChart>
+   </center>
+</BorderPane>
